@@ -440,7 +440,7 @@ header.sticky .navbar ul li .active {
   width: 100%;
   display: grid;
   place-items: center;
-  background-image: url("../../img/slider-img.jpg");
+  background-image: url("../img/slider-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
