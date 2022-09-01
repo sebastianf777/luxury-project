@@ -1,0 +1,17 @@
+//Abstracts
+@import "./abstracts/_variables.scss";
+@import "./abstracts/_mixins.scss";
+
+//Base
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+
+//Layouts
+@import "./layout/_navbar.scss";  
+@import "./layout/_header.scss";  
+@import "./layout/_section.scss";
+// @import "./layout/_footer.scss";
+
+//Componentes
+@import "./components/_buttons.scss";
+

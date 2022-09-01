@@ -1,0 +1,38 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexColumnCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin flexRowCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin underline {
+    content: '';
+    position: absolute;
+    background-color: $color_primary;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+    z-index: 200;
+}
