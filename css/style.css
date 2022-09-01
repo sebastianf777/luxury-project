@@ -7,14 +7,6 @@
   box-sizing: border-box;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgb(22, 45, 84);
   opacity: 1; /* Firefox */
@@ -545,8 +537,8 @@ header.sticky .navbar ul li .active {
   border: 10px solid #e8ecff;
   position: absolute;
   top: -80px;
-  left: 46%;
-  transform: translate X(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .testimonials-section .testimonials-section__container .testimonials-section__testimonials .user p {
   font-size: 22px;
@@ -606,37 +598,37 @@ header.sticky .navbar ul li .active {
   grid-row-gap: 0px;
 }
 .grid-section .grid-section__container .box-01 .inner {
-  background-image: url("../../img/grid-1.webp");
+  background-image: url("../img/grid-1.webp");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .grid-section .grid-section__container .box-02 .inner {
-  background-image: url("../../img/grid-2.jfif");
+  background-image: url("../img/grid-2.jfif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .grid-section .grid-section__container .box-03 .inner {
-  background-image: url("../../img/grid-3.webp");
+  background-image: url("../img/grid-3.webp");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .grid-section .grid-section__container .box-04 .inner {
-  background-image: url("../../img/grid-4.webp");
+  background-image: url("../img/grid-4.webp");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .grid-section .grid-section__container .box-05 .inner {
-  background-image: url("../../img/grid-5.jfif");
+  background-image: url("../img/grid-5.jfif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .grid-section .grid-section__container .box-06 .inner {
-  background-image: url("../../img/grid-6.jfif");
+  background-image: url("../img/grid-6.jfif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
