@@ -1,28 +1,28 @@
 window.onload = function () {
-//All buttons
-const all_buttons = document.querySelectorAll('button');
-const link_buttons = document.querySelectorAll('a');
-(() => {
-    all_buttons.forEach(element => {
-        element.addEventListener('click', (e) => {
-            e.preventDefault;
-        })
-    });
-    link_buttons.forEach(element => {
-        element.addEventListener('click', (e) => {
-            e.preventDefault;
-        })
-    });
-})();
+    //All buttons
+    const all_buttons = document.querySelectorAll('button');
+    const link_buttons = document.querySelectorAll('a');
+    (() => {
+        all_buttons.forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault;
+            })
+        });
+        link_buttons.forEach(element => {
+            element.addEventListener('click', (e) => {
+                e.preventDefault;
+            })
+        });
+    })();
 
 
-//Navbar
-const header = document.querySelector('header');
-window.addEventListener('scroll', function () {
-    header.classList.toggle('sticky', window.scrollY > 50)
-})
+    //Navbar
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', function () {
+        header.classList.toggle('sticky', window.scrollY > 50)
+    })
 
-//Video section
+    //Video section
 
 
     let sourceVideo = document.getElementById('sourceVideo');
@@ -53,16 +53,16 @@ const exploreIframe = document.querySelector('.explore-section__iframe');
 const stopVideos = () => {
     document.querySelectorAll('iframe').forEach(v => { v.src = v.src });
     // document.querySelectorAll('video').forEach(v => { v.pause() });
-  };
-closeExplore.onclick = function(){
+};
+closeExplore.onclick = function () {
     stopVideos();
-   
+
     exploreIframe.style.display = 'none';
     closeExplore.style.display = 'none';
 
 
 }
-playExplore.onclick = function(e){
+playExplore.onclick = function (e) {
     e.preventDefault;
     exploreIframe.style.display = 'flex';
     closeExplore.style.display = 'flex';
@@ -72,28 +72,28 @@ playExplore.onclick = function(e){
 //Testimonials Section
 
 const testimonials = document.getElementById('testimonials');
-        const control1 = document.getElementById('control1');
-        const control2 = document.getElementById('control2');
-        const control3 = document.getElementById('control3');
-        
-        
-        control1.onclick=function(){
-            testimonials.style.transform = "translateX(34%)";
-            control1.classList.add("active");
-            control2.classList.remove("active");
-            control3.classList.remove("active");
-        }
-        
-        control2.onclick=function(){
-            testimonials.style.transform = "translateX(0px)";
-            control1.classList.remove("active");
-            control2.classList.add("active");
-            control3.classList.remove("active");
-        }
-        
-        control3.onclick=function(){
-            testimonials.style.transform = "translateX(-33%)";
-            control1.classList.remove("active");
-            control2.classList.remove("active");
-            control3.classList.add("active");
-        }
+const control1 = document.getElementById('control1');
+const control2 = document.getElementById('control2');
+const control3 = document.getElementById('control3');
+
+
+control1.onclick = function () {
+    testimonials.style.transform = "translateX(34%)";
+    control1.classList.add("active");
+    control2.classList.remove("active");
+    control3.classList.remove("active");
+}
+
+control2.onclick = function () {
+    testimonials.style.transform = "translateX(0px)";
+    control1.classList.remove("active");
+    control2.classList.add("active");
+    control3.classList.remove("active");
+}
+
+control3.onclick = function () {
+    testimonials.style.transform = "translateX(-33%)";
+    control1.classList.remove("active");
+    control2.classList.remove("active");
+    control3.classList.add("active");
+}
