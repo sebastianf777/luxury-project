@@ -71,10 +71,10 @@ playExplore.onclick = function(e){
 
 //Testimonials Section
 
-var testimonials = document.getElementById('testimonials');
-        var control1 = document.getElementById('control1');
-        var control2 = document.getElementById('control2');
-        var control3 = document.getElementById('control3');
+const testimonials = document.getElementById('testimonials');
+        const control1 = document.getElementById('control1');
+        const control2 = document.getElementById('control2');
+        const control3 = document.getElementById('control3');
         
         
         control1.onclick=function(){
