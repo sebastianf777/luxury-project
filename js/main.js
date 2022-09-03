@@ -78,7 +78,7 @@ var testimonials = document.getElementById('testimonials');
         
         
         control1.onclick=function(){
-            testimonials.style.transform = "translateX(63vw)";
+            testimonials.style.transform = "translateX(34%)";
             control1.classList.add("active");
             control2.classList.remove("active");
             control3.classList.remove("active");
@@ -92,7 +92,7 @@ var testimonials = document.getElementById('testimonials');
         }
         
         control3.onclick=function(){
-            testimonials.style.transform = "translateX(-65vw)";
+            testimonials.style.transform = "translateX(-33%)";
             control1.classList.remove("active");
             control2.classList.remove("active");
             control3.classList.add("active");
