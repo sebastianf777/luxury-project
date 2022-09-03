@@ -13,7 +13,7 @@ header {
 
 header.sticky {
     padding: 5px 100px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $header_sticky;
 
     .navbar {
         .navbar__link{

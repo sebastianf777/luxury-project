@@ -13,6 +13,11 @@
   text-shadow: 0px 0 white, 0 1px white, 0px 0 white, 0 -1px white;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 .navbar {
   height: 80px;
   width: 100%;
@@ -415,13 +420,17 @@ header.sticky .navbar ul li .active {
   position: fixed;
   top: 15vh;
   right: 3vw;
+  z-index: 1000;
 }
 .explore-section .explore-section__container .explore-section__video .explore-section__button .explore-section__hidden .explore-section__iframe {
   display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: grey;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .explore-section .explore-section__container .explore-section__video .explore-section__button .explore-section__hidden .explore-section__iframe iframe {
   width: 80vw;
@@ -592,10 +601,12 @@ header.sticky .navbar ul li .active {
 }
 .grid-section .grid-section__container {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  width: 100%;
+  grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  padding-left: 20px;
 }
 .grid-section .grid-section__container .box-01 .inner {
   background-image: url("../img/grid-1.webp");
@@ -639,7 +650,7 @@ header.sticky .navbar ul li .active {
 }
 .grid-section .grid-section__container .test_box .inner {
   display: block;
-  margin: 10px;
+  margin: 0px 10px 10px 0;
   overflow: hidden;
 }
 .grid-section .grid-section__container .test_box .inner .test_click {
